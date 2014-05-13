@@ -14,7 +14,7 @@ app.get('/js/:id', function(req, res) {
   res.sendfile(__dirname + '/js/' + req.params.id);
 });
 
-app.get('/html/:id' , function(req, res) {
+//app.get('/html/:id' , function(req, res) {
 res.sendfile(__dirname + '/html/' + req.params.id);
 });
 var port = process.env.PORT || 8080;
