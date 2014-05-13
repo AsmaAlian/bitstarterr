@@ -14,7 +14,11 @@ app.get('/js/:id', function(req, res) {
   res.sendfile(__dirname + '/js/' + req.params.id);
 });
 
+apt.get('/html/:id' , function(req, res) {
+res.sendfile(__dirname + '/html/' + req.params.id);
+});
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
